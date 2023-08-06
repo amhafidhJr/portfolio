@@ -1,0 +1,20 @@
+
+<div class="mt-5">
+  <div class="container mt-5">
+    <div class="row">
+      
+      <div class="col-lg-4 col-md-4 col-sm-12" *ngFor="let card of cards" [@fade]>
+        <!-- Card content goes here -->
+        <!-- Replace the content below with your card structure -->
+        <div class="profile-card-2">
+          <img src="{{card.image}}" class="img img-responsive">
+          <div class="profile-name text-dark">{{card.title}}</div>
+          <div class="profile-icons text-white btn btn-sm btn-dark">
+            <a style="text-decoration: none;" href="{{card.link}}">View Project </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="particles-js"></div>
+</div>
